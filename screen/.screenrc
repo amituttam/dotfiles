@@ -1,0 +1,28 @@
+hardstatus alwayslastline
+hardstatus string '%{= kG}%-Lw%{= kW}%50> %n*%f %t%{= kG}%+Lw%< %{= kG}%-=%D %m/%d/%y | %C %A'
+#hardstatus string '%{= kG}[ %{G}%H %{g}][%= %{=kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B}%Y-%m-%d %{W}%c %{g}]' 
+# terminfo and termcap for nice 256 color terminal
+# allow bold colors - necessary for some reason
+attrcolor b ".I"
+# tell screen how to set colors. AB = background, AF=foreground
+termcapinfo xterm 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
+# erase background with current bg color
+defbce "on"
+# Refresh entire screen on window change
+allpartial off
+# Use X scrolling mechanism
+termcapinfo xterm* ti@:te@
+# turn off visual bell
+vbell off
+# workaround for del key
+#bindkey -d ^@ stuff ^?
+# turn off startup messages
+startup_message off
+# set scrollback, can also be set interactively by Ctrl A + : and type
+# scrollback <num>
+defscrollback 10000
+
+term "xterm-256color"
+
+# startup sequence
+screen -t shell     0   bash

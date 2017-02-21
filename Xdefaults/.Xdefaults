@@ -1,0 +1,158 @@
+!-- Xft settings -- !
+!Xft.dpi:        96
+!Xft.antialias:  true
+!Xft.rgba:       rgb
+!Xft.hinting:    true
+!Xft.hintstyle:  hintslight
+
+! Paste
+URxvt.keysym.Shift-Control-V: perl:clipboard:paste
+URxvt.iso14755: False
+
+!urxvt.font: xft:DejaVu Sans Mono:style=condensed:pixelsize=17
+URxvt*letterSpace: -2
+urxvt.font: xft:Droid Sans Mono:style=Regular:pixelsize=18
+!urxvt.font: xft:Monaco:style=Regular:pixelsize=14
+!urxvt.font: xft:GohuFont:style=Regular
+!urxvt.font: xft:Ubuntu Mono:style=Regular:pixelsize=18
+! make a scrollbar that's nearly black
+urxvt*scrollBar:                               false
+urxvt*scrollBar_floating:                      true
+urxvt*scrollBar_right:                         false
+urxvt*scrollColor:                             #202020
+urxvt*termName:                                xterm
+urxvt*urllauncher:                             chromium
+! matcher.button # 3 is a right-click
+urxvt*matcher.button:                          3
+urxvt*saveLines:                               8192
+urxvt.perl-ext-common:                         default,matcher,clipboard,tabbed
+
+! transparency
+urxvt*depth:                                   24
+urxvt*transparent:                             true
+urxvt*fading:           0
+urxvt*shading:          10
+urxvt*tintColor:        #000000
+urxvt*cursorColor:      #FD971F
+urxvt*inheritPixmap:    true
+urxvt*background:      rgba:2222/2222/2222/dddd
+
+! colors
+!urxvt*background: #000000
+!urxvt*foreground: #d3d7cf
+!urxvt*color0: #000000
+!urxvt*color8: #555753
+!urxvt*color1: #a40000
+!urxvt*color9: #cc0000
+!urxvt*color2: #4e9a06
+!urxvt*color10: #73d216
+!urxvt*color3: #c4a000
+!urxvt*color11: #edd400
+!urxvt*color4: #204a87
+!urxvt*color12: #3465a4
+!urxvt*color5: #ce5c00
+!urxvt*color13: #f57900
+!urxvt*color6: #038e82
+!urxvt*color14: #05d2c1
+!urxvt*color7: #d3d7cf
+!urxvt*color15: #d3d7cf
+!urxvt*cursorColor:       #d8d8d8
+
+! Theme
+urxvt*foreground: white
+urxvt*background: black
+!
+!*color0:  #2E3436
+!*color1:  #a40000
+!*color2:  #4E9A06
+!*color3:  #C4A000
+!*color4:  #3465A4
+!*color5:  #75507B
+!*color6:  #ce5c00
+!*color7:  #babdb9
+!*color8:  #555753
+!*color9:  #EF2929
+!*color10: #8AE234
+!*color11: #FCE94F
+!*color12: #729FCF
+!*color13: #AD7FA8
+!*color14: #fcaf3e
+!*color15: #EEEEEC
+!
+!urxvt*transparent: true
+!urxvt*shading: 15
+
+! grassland by bohoomil
+!*background:  #0d1926
+!*foreground:  #d9e6f2
+!*cursorColor: #238c0e
+!
+!! black
+!*color0:  #00070d
+!! dark gray
+!*color8:  #666666
+!
+!! red
+!*color1:  #a83a71
+!! bright red
+!*color9:  #d78bb1
+!
+!! green
+!*color2:  #71a83a
+!! bright green
+!*color10: #b1d78b
+!
+!! yellow
+!*color3:  #a8713a
+!! bright yellow
+!*color11: #d7b18b
+!
+!! blue
+!*color4:  #3a71a8
+!! bright blue
+!*color12: #8bb1d7
+!
+!! magenta
+!*color5:  #713aa8
+!! bright magenta
+!*color13: #b18bd7
+!
+!! cyan
+!*color6:  #3aa871
+!! bright cyan
+!*color14: #8bd7b1
+!
+!! light gray
+!*color7:  #a6a6a6
+!! white
+!*color15: #e6e6e6
+
+! default gnome terminal theme
+! to match gnome-terminal "Linux console" scheme
+! foreground/background
+!URxvt*background: #000000
+!URxvt*foreground: #ffffff
+!! black
+!URxvt.color0  : #000000
+!URxvt.color8  : #555555
+!! red
+!URxvt.color1  : #AA0000
+!URxvt.color9  : #FF5555
+!! green
+!URxvt.color2  : #00AA00
+!URxvt.color10 : #55FF55
+!! yellow
+!URxvt.color3  : #AA5500
+!URxvt.color11 : #FFFF55
+!! blue
+!URxvt.color4  : #0000AA
+!URxvt.color12 : #5555FF
+!! magenta
+!URxvt.color5  : #AA00AA
+!URxvt.color13 : #FF55FF
+!! cyan
+!URxvt.color6  : #00AAAA
+!URxvt.color14 : #55FFFF
+!! white
+!URxvt.color7  : #AAAAAA
+!URxvt.color15 : #FFFFFF

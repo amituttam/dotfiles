@@ -1,0 +1,13 @@
+[user]
+	email = amit.uttam@gmail.com
+	name = Amit Uttamchandani
+
+[sendemail]
+	smtpencryption = tls
+	smtpserver = smtp.gmail.com
+	smtpuser = amit.uttam@gmail.com
+	smtpserverport = 587
+[push]
+	default = simple
+[credential]
+	helper = cache --timeout=3600
