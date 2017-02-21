@@ -1,0 +1,10 @@
+* Dotfiles
+  A repo of personal configs. Use
+  [[http://www.gnu.org/software/stow/][stow]] to set up the symlinks.
+
+** Instructions
+
+   Example: =cd dotfiles; stow -v bash= will sym link the files in
+   the =bash/= directory to the correct place in =$HOME=.
+
+   =stow -v -D bash= to remove the symlink.
